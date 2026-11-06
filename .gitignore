@@ -45,3 +45,5 @@ yarn-error.log*
 
 # OS metadata
 .DS_Store
+
+.vercel
