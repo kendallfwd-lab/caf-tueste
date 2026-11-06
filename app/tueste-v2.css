@@ -1,0 +1,42 @@
+/* Tueste V2: responsive refinements, editorial media and checkout clarity */
+.site-root{font-feature-settings:"kern"}
+.site-root .navigation{gap:clamp(12px,2vw,30px)}
+.site-root .navigation a,.site-root .navigation button{font-size:11px}
+.site-root .product-card{transition:transform .3s ease,box-shadow .3s ease;will-change:transform}
+.site-root .product-card:hover{transform:translateY(-6px);box-shadow:0 23px 60px #47301b15}
+.site-root .coffee-bag{transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.site-root .product-card:hover .coffee-bag{transform:translateY(-8px) rotate(-2deg)}
+.site-root .stock-hint{display:block;color:#73836d;font-size:10px;font-weight:700;margin-top:10px}
+.site-root .demo-checkout{margin:10px 0 3px;padding:12px 14px;width:100%;display:flex;align-items:center;justify-content:center;gap:8px;background:transparent;color:#62422f;border:1px solid #c9b8a4;font-size:11px;font-weight:800}
+.site-root .demo-checkout:hover{background:#f0e5d8}
+.site-root .order-toast .button{display:flex;text-decoration:none}
+.site-root .story-photo{background-image:url('/tueste-editorial-v2.png');background-position:center center;background-size:cover}
+.site-root .cart-panel{animation:tuesteDrawer .33s cubic-bezier(.2,.8,.2,1)}
+.site-root .order-toast{animation:tuesteModal .28s ease-out}
+.site-root .story{overflow:hidden}
+.site-root .story-photo{transition:background-size .6s ease}
+.site-root .button,.site-root .checkout{transition:transform .18s ease,background .2s ease}
+.site-root .button:hover,.site-root .checkout:hover{transform:translateY(-2px)}
+@keyframes tuesteDrawer{from{transform:translateX(30px);opacity:.4}to{transform:translateX(0);opacity:1}}
+@keyframes tuesteModal{from{transform:translate(-50%,-46%) scale(.97);opacity:.3}to{transform:translate(-50%,-50%) scale(1);opacity:1}}
+@media(max-width:1200px) and (min-width:731px){.site-root .topbar{padding:0 3%}.site-root .header-caption{display:none}.site-root .navigation{gap:13px}.site-root .navigation a,.site-root .navigation button{font-size:10px}}
+@media(max-width:900px) and (min-width:731px){.site-root .navigation{gap:9px}.site-root .navigation a,.site-root .navigation button{font-size:9px}}
+@media(max-width:730px){.site-root .navigation a,.site-root .navigation button{font-size:13px}.site-root .product-card:hover{transform:none}.site-root .hero{min-height:640px}.site-root .hero-image{background-position:60% center}.site-root .story-photo{background-position:center 58%}.site-root .cart-summary small{line-height:1.65}}
+@media(prefers-reduced-motion:reduce){.site-root .cart-panel,.site-root .order-toast{animation:none}.site-root .coffee-bag,.site-root .product-card{transition:none}.site-root .product-card:hover{transform:none}}
+
+/* Costa Rica delivery details: compact, keyboard-friendly, no checkout surprises. */
+.site-root .cart-summary{max-height:68vh;overflow:auto;overscroll-behavior:contain}
+.site-root .cart-summary>.delivery-fields{display:grid;gap:9px;padding:15px;background:#f1eae0;border:1px solid #e4d5c4;color:#3b2b20}
+.site-root .delivery-fields>strong{font:400 18px Georgia;color:#35271d}
+.site-root .delivery-fields label{display:grid;gap:5px;font-size:11px;font-weight:700;letter-spacing:.015em}
+.site-root .delivery-fields input,.site-root .delivery-fields select,.site-root .delivery-fields textarea{min-width:0;width:100%;padding:10px 11px;border:1px solid #d1bfae;border-radius:3px;background:#fffdf9;color:#34271e;font-size:13px;outline-offset:2px}
+.site-root .delivery-row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.site-root .delivery-fields small{color:#665344;line-height:1.5}
+.account-payment-actions{display:flex;flex-wrap:wrap;gap:7px;justify-content:flex-end}
+.account-payment-actions button{border:1px solid #bda48e;border-radius:4px;background:#fff4e6;color:#513620;padding:8px 11px;font-size:11px;font-weight:700;cursor:pointer}
+.account-payment-actions button:disabled{opacity:.5;cursor:wait}
+.account-payment-actions .test-pay{background:#432c20;color:#fff;border-color:#432c20}
+.account-note{padding:12px 17px;background:#ede4d7;color:#5d4634;margin-top:12px;font-size:12px;line-height:1.55}
+.account-timeline{font-size:11px;color:#6b5544;display:grid;gap:4px;margin-top:10px}
+.account-timeline p{margin:0}
+@media(max-width:730px){.site-root .cart-summary{max-height:65vh;padding:15px 20px}.site-root .cart-head{padding:22px}.site-root .cart-products{padding:12px 20px}.site-root .delivery-row{grid-template-columns:1fr}.account-payment-actions{justify-content:flex-start}}

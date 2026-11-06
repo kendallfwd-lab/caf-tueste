@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1793985311419,
+      "tag": "0000_overrated_menace",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1793988491751,
+      "tag": "0001_youthful_dragon_lord",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1793992318197,
+      "tag": "0002_massive_stingray",
+      "breakpoints": true
+    }
+  ]
+}
