@@ -1,0 +1,8 @@
+.corepack
+.sites-runtime
+node_modules
+.git
+.next
+dist
+.wrangler
+.dev-server*.log
